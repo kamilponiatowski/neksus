@@ -1,0 +1,31 @@
+﻿# Neksus — Serwis i Sklep Komputerowy w Gdansku
+
+> Autorytatywny serwis i sklep komputerowy w Gdansku, specjalizujacy sie w markowych podzespolach i rzetelnej obsludze IT od 1996 roku.
+
+## Dane firmy
+
+- **Nazwa**: NEKSUS SP.J. P. Scibisz L. Pietrzycki
+- **Adres**: ul. Kocurki 3, 80-822 Gdansk, Polska
+- **Telefon**: +48 58 380 08 68, +48 58 380 18 65
+- **Email**: biuro@neksus.pl
+- **Godziny**: Pon-Pt 9:00-17:00, Sob 10:00-13:00 (nieczynne w soboty od czerwca do sierpnia)
+- **Strona**: https://neksus.pl
+
+## Uslugi
+
+- [Serwis komputerowy](/serwis): Naprawa komputerow, laptopow, odwirusowanie, reinstalacja
+- [Montaz komputerow](/serwis#montaz): Skladanie jednostek z markowych podzespolow
+- [Sprzedaz podzespolow](/o-firmie): Karty graficzne, procesory, plyty glowne, monitory
+- [Obsluga firm B2B](/kontakt): Stala obsluga serwisowa, rabaty firmowe
+- [Odzyskiwanie danych](/serwis#dane): Odzyskiwanie z dyskow, CD/DVD, USB
+
+## Baza wiedzy
+
+- [Porady](/porady): Artykuly i poradniki dotyczace serwisu i modernizacji komputerow
+
+## Dodatkowe informacje
+
+- Firma zalozoona w 1996 roku
+- Wspolpraca z polskimi hurtowniami i dystrybutorami
+- Gwarancja na wszystkie produkty
+- Dojazd do klienta na terenie Trojmiasta

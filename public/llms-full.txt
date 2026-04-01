@@ -1,0 +1,66 @@
+﻿# Neksus — Pelna dokumentacja uslugowa
+
+> Kompletna baza wiedzy o firmie Neksus z Gdanska dla systemow RAG i agentow AI.
+
+## 1. Profil firmy
+
+NEKSUS SP.J. P. Scibisz L. Pietrzycki to firma komputerowa z siedziba w Gdansku przy ul. Kocurki 3 (kod 80-822). Firma dziala od 1996 roku i specjalizuje sie w sprzedazy markowych podzespolow komputerowych oraz profesjonalnym serwisie. Obsluguje klientow indywidualnych, szkoly, uczelnie trojmiejskie oraz firmy (B2B). Wspolpracuje z wiekszoscia polskich duzych hurtowni i dystrybutorow sprzetu komputerowego.
+
+**Kontakt:**
+- Tel: +48 58 380 08 68 / +48 58 380 18 65
+- Email: biuro@neksus.pl
+
+**Godziny otwarcia:**
+- Poniedzialek - Piatek: 9:00 - 17:00
+- Sobota: 10:00 - 13:00
+- UWAGA: Od czerwca do sierpnia sklep jest NIECZYNNY w soboty.
+- Niedziela: nieczynne
+
+## 2. Oferta produktowa
+
+Neksus oferuje:
+- Komputery stacjonarne i laptopy (Toshiba, Lenovo, Apple, Acer, HP, Dell, Asus, Samsung)
+- Podzespoly: karty graficzne, plyty glowne, procesory, monitory, drukarki, zasilacze, nagrywarki
+- Materialy eksploatacyjne: tusze, tonery, papier
+- Nosniki danych: pendrive, dyski zewnetrzne
+- Oprogramowanie dla firm i klientow indywidualnych
+- Akcesoria i peryferia komputerowe
+
+## 3. Uslugi serwisowe
+
+### 3.1. Odwirusowanie komputera
+Usuwanie wirusow, trojanow, spyware, malware. Czyszczenie rejestru Windows. Instalacja poprawek bezpieczenstwa i oprogramowania antywirusowego.
+
+### 3.2. Instalacja Windows bez utraty danych
+Instalacja MS Windows z najnowszymi sterownikami i aktualizacjami. Backup danych nawet gdy poprzedni system nie uruchamia sie (przez zewnetrzny system boot USB). Uwaga: instalacja oprogramowania tylko z nosnikow dostarczonych przez klienta.
+
+### 3.3. Konfiguracja MS Windows
+Instalacja pelnego zestawu sterownikow i oprogramowania (przegladarki, archiwizatory, kodeki, antywirusy). Konfiguracja polaczenia internetowego i konta pocztowego.
+
+### 3.4. Instalacja nowych urzadzen
+Podlaczenie i konfiguracja nowych urzadzen, kart rozszerzen oraz napedow.
+
+### 3.5. Konfiguracja sieci
+Konfiguracja routerow, WiFi, modemow (Neostrada, Livebox). Konfiguracja VPN dla firm.
+
+### 3.6. Rozwiazywanie problemow software-owych
+Usuwanie usterek konfiguracyjnych. Odzyskiwanie kont Windows zabezpieczonych haslem.
+
+### 3.7. Archiwizacja danych
+Zapisywanie danych na CD/DVD lub dyskach twardych. Odzyskiwanie danych z uszkodzonych nosnikow.
+
+### 3.8. Montaz komputerow
+Profesjonalny montaz jednostek z markowych podzespolow dla graczy i profesjonalistow.
+
+## 4. Obsluga B2B
+
+Firma oferuje stala obsluge serwisowa dla podmiotow gospodarczych z systemem rabatowym. Mozliwosc dojazdu do klienta na terenie Trojmiasta i okolic. Umowy serwisowe dla szkol, uczelni i firm.
+
+## 5. Warunki gwarancji
+
+Neksus udziela gwarancji na kazdy oferowany produkt. Glowne warunki:
+- Naprawa w ciagu 14 dni roboczych (do 30 dni w przypadku skomplikowanych napraw)
+- Sprzet nalezy dostarczyc w oryginalnych opakowaniach z gwarancja i faktura
+- Gwarancja nie obejmuje uszkodzen mechanicznych, wyladowan atmosferycznych, zalania
+- Gwarancja nie obejmuje konfiguracji, usuwania wirusow, instalacji oprogramowania (uslugi platne)
+- Naruszenie plomb gwarancyjnych powoduje utrate gwarancji
