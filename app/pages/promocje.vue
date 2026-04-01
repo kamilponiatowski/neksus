@@ -16,8 +16,8 @@ useSeoMeta({
       <Container>
         <div class="max-w-3xl">
           <div class="flex items-center gap-3 mb-4">
-            <div class="flex items-center justify-center size-12 rounded-full bg-brand/10 text-brand">
-              <Icon name="lucide:percent" class="size-6" />
+            <div class="flex items-center justify-center size-12 rounded-full icon-glass">
+              <Icon name="lucide:percent" class="size-6" style="color: #ca2b2b" />
             </div>
             <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-ink" style="letter-spacing: -0.02em;">
               Promocje
@@ -53,7 +53,7 @@ useSeoMeta({
                   Dla klientów korzystających z <strong>usług serwisowych</strong> z ulotką reklamową lub na hasło:
                 </p>
 
-                <blockquote class="border-l-4 border-brand pl-4 py-2 my-6 bg-brand/5 rounded-r-lg">
+                <blockquote class="border-l-4 border-brand pl-4 py-2 my-6 rounded-r-lg">
                   <p class="text-2xl font-bold text-brand m-0">
                     "Serwis z ludzką twarzą"
                   </p>

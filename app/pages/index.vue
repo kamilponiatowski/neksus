@@ -51,9 +51,20 @@ const marqueeItems = [...trustBrands, ...trustBrands]
     <section class="py-20 md:py-32 hero-mesh">
       <Container>
         <div class="max-w-3xl mx-auto text-center">
-          <Badge :color="statusColor" size="lg" dot class="mb-6">
-            {{ statusText }}
-          </Badge>
+          <div class="inline-flex items-center gap-3 mb-6">
+            <Badge :color="statusColor" size="lg" dot>
+              {{ statusText }}
+            </Badge>
+            <a
+              :href="business.social.googleMaps"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-1.5 text-sm font-semibold text-brand hover:text-brand-hover transition-colors duration-300"
+            >
+              <Icon name="lucide:navigation" class="size-4" />
+              Przyjedź do nas
+            </a>
+          </div>
 
           <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 text-ink" style="letter-spacing: -0.02em;">
             Fachowy serwis <span class="text-brand">komputerowy</span><br class="hidden md:block">
@@ -112,8 +123,8 @@ const marqueeItems = [...trustBrands, ...trustBrands]
           >
             <template #header>
               <div class="flex items-center gap-3">
-                <div class="flex items-center justify-center size-10 rounded-full bg-brand-subtle text-ink-muted group-hover:text-brand transition-colors duration-200">
-                  <Icon :name="service.icon.replace('i-lucide-', 'lucide:')" class="size-5" />
+                <div class="flex items-center justify-center size-10 rounded-full icon-glass">
+                  <Icon :name="service.icon.replace('i-lucide-', 'lucide:')" class="size-5" style="color: #ca2b2b" />
                 </div>
                 <h3 class="font-semibold text-lg text-ink">{{ service.name }}</h3>
               </div>

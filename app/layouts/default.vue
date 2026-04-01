@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const business = useBusinessData()
 const currentYear = new Date().getFullYear()
+const { isOpen, statusText, statusColor } = useOpenStatus()
 const mobileMenuOpen = ref(false)
 const route = useRoute()
 
@@ -140,6 +141,18 @@ watch(() => route.path, () => {
           <!-- Hours -->
           <div>
             <h3 class="font-bold text-lg mb-3 text-ink">Godziny otwarcia</h3>
+            <div class="flex items-center gap-2 mb-3">
+              <Badge :color="statusColor" size="sm" dot>{{ statusText }}</Badge>
+              <a
+                :href="business.social.googleMaps"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1 text-xs font-semibold text-brand hover:text-brand-hover transition-colors duration-300"
+              >
+                <Icon name="lucide:navigation" class="size-3.5" />
+                Nawiguj
+              </a>
+            </div>
             <div class="space-y-1 text-sm text-ink-muted">
               <p>Pon–Pt: 9:00 – 17:00</p>
               <p>Sob: 10:00 – 13:00</p>

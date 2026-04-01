@@ -17,8 +17,8 @@ useSeoMeta({
       <Container>
         <div class="max-w-3xl">
           <div class="flex items-center gap-3 mb-4">
-            <div class="flex items-center justify-center size-12 rounded-full bg-brand/10 text-brand">
-              <Icon name="lucide:map-pin" class="size-6" />
+            <div class="flex items-center justify-center size-12 rounded-full icon-glass">
+              <Icon name="lucide:map-pin" class="size-6" style="color: #ca2b2b" />
             </div>
             <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-ink" style="letter-spacing: -0.02em;">
               Kontakt
