@@ -18,8 +18,8 @@ const { data: porady } = await useAsyncData('porady', () =>
       <Container>
         <div class="max-w-3xl">
           <div class="flex items-center gap-3 mb-4">
-            <div class="flex items-center justify-center size-12 rounded-full icon-glass">
-              <Icon name="lucide:lightbulb" class="size-6" />
+            <div class="flex items-center justify-center size-14 rounded-full icon-glass">
+              <Icon name="lucide:lightbulb" class="size-7" />
             </div>
             <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-ink" style="letter-spacing: -0.02em;">
               Porady
@@ -40,6 +40,16 @@ const { data: porady } = await useAsyncData('porady', () =>
             v-for="porada in porady"
             :key="porada.path"
           >
+            <template v-if="porada.image" #image>
+              <NuxtImg
+                :src="porada.image"
+                :alt="porada.title"
+                class="w-full h-40 object-cover"
+                width="400"
+                height="160"
+                loading="lazy"
+              />
+            </template>
             <template #header>
               <div v-if="porada.tags && porada.tags.length > 0" class="flex flex-wrap gap-2 mb-2">
                 <Badge

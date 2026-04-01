@@ -6,7 +6,7 @@ const mobileMenuOpen = ref(false)
 const route = useRoute()
 
 const navLinks = [
-  { label: 'Start', to: '/' },
+  { label: 'Strona główna', to: '/' },
   { label: 'O firmie', to: '/o-firmie' },
   { label: 'Serwis', to: '/serwis' },
   { label: 'Gwarancja', to: '/gwarancja' },

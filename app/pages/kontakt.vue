@@ -17,12 +17,20 @@ useSeoMeta({
       <Container>
         <div class="max-w-3xl">
           <div class="flex items-center gap-3 mb-4">
-            <div class="flex items-center justify-center size-12 rounded-full icon-glass">
-              <Icon name="lucide:map-pin" class="size-6" />
+            <div class="flex items-center justify-center size-14 rounded-full icon-glass">
+              <Icon name="lucide:map-pin" class="size-7" />
             </div>
-            <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-ink" style="letter-spacing: -0.02em;">
-              Kontakt
-            </h1>
+            <div>
+              <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-ink" style="letter-spacing: -0.02em;">
+                Kontakt
+              </h1>
+              <div class="mt-1">
+                <Badge :color="statusColor" size="sm" dot>
+                  <Icon :name="isOpen ? 'lucide:door-open' : 'lucide:door-closed'" class="size-3.5 mr-1" />
+                  {{ statusText }}
+                </Badge>
+              </div>
+            </div>
           </div>
           <p class="text-lg text-ink-muted">
             Odwiedź nas lub skontaktuj się telefonicznie
@@ -37,15 +45,7 @@ useSeoMeta({
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <!-- Contact Details -->
           <div class="space-y-6">
-            <!-- Open Status -->
-            <Card>
-              <div class="flex items-center gap-3">
-                <Badge :color="statusColor" size="lg">
-                  <Icon :name="isOpen ? 'lucide:door-open' : 'lucide:door-closed'" class="size-4 mr-1" />
-                  {{ statusText }}
-                </Badge>
-              </div>
-            </Card>
+            <!-- Open Status Card removed — status moved to Page Header -->
 
             <!-- Address -->
             <Card>
@@ -144,33 +144,6 @@ useSeoMeta({
                   </template>
                 </Alert>
               </template>
-            </Card>
-
-            <!-- Map Placeholder -->
-            <Card>
-              <template #header>
-                <div class="flex items-center gap-2">
-                  <Icon name="lucide:map" class="size-5 text-brand" />
-                  <span class="font-semibold">Lokalizacja</span>
-                </div>
-              </template>
-              <div class="aspect-video bg-page-alt rounded-lg flex items-center justify-center">
-                <div class="text-center">
-                  <Icon name="lucide:map-pin" class="size-12 text-ink-muted mx-auto mb-2" />
-                  <p class="text-ink-muted text-sm">{{ business.address.street }}</p>
-                  <p class="text-ink-muted text-sm">{{ business.address.city }}</p>
-                  <Button
-                    :href="business.social.googleMaps"
-                    target="_blank"
-                    variant="outline"
-                    size="sm"
-                    class="mt-4"
-                  >
-                    <Icon name="lucide:external-link" class="size-4" />
-                    Zobacz na mapie
-                  </Button>
-                </div>
-              </div>
             </Card>
           </div>
         </div>

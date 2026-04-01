@@ -61,8 +61,8 @@ const serviceDetails = [
       <Container>
         <div class="max-w-3xl">
           <div class="flex items-center gap-3 mb-4">
-            <div class="flex items-center justify-center size-12 rounded-full icon-glass">
-              <Icon name="lucide:wrench" class="size-6" />
+            <div class="flex items-center justify-center size-14 rounded-full icon-glass">
+              <Icon name="lucide:wrench" class="size-7" />
             </div>
             <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-ink" style="letter-spacing: -0.02em;">
               Serwis komputerowy
@@ -86,8 +86,8 @@ const serviceDetails = [
           >
             <div class="flex gap-4">
               <div class="flex-shrink-0">
-                <div class="flex items-center justify-center size-12 rounded-full icon-glass">
-                  <Icon :name="service.icon.replace('i-lucide-', 'lucide:')" class="size-6" />
+                <div class="flex items-center justify-center size-14 rounded-full icon-glass">
+                  <Icon :name="service.icon.replace('i-lucide-', 'lucide:')" class="size-7" />
                 </div>
               </div>
               <div>
@@ -111,8 +111,8 @@ const serviceDetails = [
           >
             <template #header>
               <div class="flex items-center gap-3">
-                <div class="flex items-center justify-center size-10 rounded-full icon-glass">
-                  <Icon :name="service.icon.replace('i-lucide-', 'lucide:')" class="size-5" />
+                <div class="flex items-center justify-center size-12 rounded-full icon-glass">
+                  <Icon :name="service.icon.replace('i-lucide-', 'lucide:')" class="size-6" />
                 </div>
                 <h3 class="font-semibold text-ink">{{ service.name }}</h3>
               </div>

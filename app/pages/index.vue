@@ -42,7 +42,7 @@ const trustBrands = [
   { name: 'Samsung', color: '#1428A0' },
 ]
 // Duplicate for seamless marquee loop
-const marqueeItems = [...trustBrands, ...trustBrands]
+const marqueeItems = [...trustBrands, ...trustBrands, ...trustBrands.slice(0,4)]
 </script>
 
 <template>
@@ -123,8 +123,8 @@ const marqueeItems = [...trustBrands, ...trustBrands]
           >
             <template #header>
               <div class="flex items-center gap-3">
-                <div class="flex items-center justify-center size-10 rounded-full icon-glass">
-                  <Icon :name="service.icon.replace('i-lucide-', 'lucide:')" class="size-5" />
+                <div class="flex items-center justify-center size-12 rounded-full icon-glass">
+                  <Icon :name="service.icon.replace('i-lucide-', 'lucide:')" class="size-6" />
                 </div>
                 <h3 class="font-semibold text-lg text-ink">{{ service.name }}</h3>
               </div>

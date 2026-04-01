@@ -75,4 +75,9 @@ export default defineNuxtConfig({
     description: 'Profesjonalny serwis komputerowy w Gdańsku. Sprzedaż markowych podzespołów, naprawa laptopów, montaż komputerów, obsługa firm B2B. Od 1996 roku.',
     defaultLocale: 'pl',
   },
+
+  // Disable dynamic OG image generation (static site — no runtime needed)
+  ogImage: {
+    zeroRuntime: true,
+  },
 })

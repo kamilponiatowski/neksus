@@ -120,8 +120,8 @@ useSeoMeta({
           >
             <template #header>
               <div class="flex items-center gap-3">
-                <div class="flex items-center justify-center size-10 rounded-full icon-glass">
-                  <Icon :name="service.icon.replace('i-lucide-', 'lucide:')" class="size-5" />
+                <div class="flex items-center justify-center size-12 rounded-full icon-glass">
+                  <Icon :name="service.icon.replace('i-lucide-', 'lucide:')" class="size-6" />
                 </div>
                 <h3 class="font-semibold text-ink">{{ service.name }}</h3>
               </div>

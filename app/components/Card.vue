@@ -1,5 +1,8 @@
 <template>
   <div class="group rounded-2xl border border-card-border bg-card hover:-translate-y-1 hover:shadow-xl hover:border-brand transition-all duration-200 ease-in-out overflow-hidden">
+    <div v-if="$slots.image" class="overflow-hidden">
+      <slot name="image" />
+    </div>
     <div v-if="$slots.header" class="px-5 py-4 border-b border-card-border">
       <slot name="header" />
     </div>
