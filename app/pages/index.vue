@@ -124,13 +124,48 @@ const marqueeItems = [...trustBrands, ...trustBrands]
             <template #header>
               <div class="flex items-center gap-3">
                 <div class="flex items-center justify-center size-10 rounded-full icon-glass">
-                  <Icon :name="service.icon.replace('i-lucide-', 'lucide:')" class="size-5" style="color: #ca2b2b" />
+                  <Icon :name="service.icon.replace('i-lucide-', 'lucide:')" class="size-5" />
                 </div>
                 <h3 class="font-semibold text-lg text-ink">{{ service.name }}</h3>
               </div>
             </template>
             <p class="text-sm text-ink-muted">{{ service.description }}</p>
           </Card>
+        </div>
+      </Container>
+    </section>
+
+    <!-- Feature highlight — Nowoczesny sprzęt -->
+    <section class="py-0 bg-page-alt overflow-hidden">
+      <Container>
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-0">
+          <!-- Image -->
+          <div class="relative h-64 md:h-auto md:min-h-[380px] overflow-hidden rounded-none">
+            <NuxtImg
+              src="/images/hero/hero-luty-na-plycie.png"
+              alt="Nowoczesny sprzęt komputerowy — płyta główna"
+              class="w-full h-full object-cover"
+              width="800"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+          <!-- Text -->
+          <div class="px-0 py-12 md:px-12 md:py-16">
+            <p class="text-xs font-bold uppercase tracking-widest text-brand mb-3">Nowoczesny sprzęt</p>
+            <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4 text-ink" style="letter-spacing: -0.02em;">
+              Nie cofamy się w czasie
+            </h2>
+            <p class="text-ink-muted text-base md:text-lg mb-8">
+              Serwisujemy i składamy komputery z najnowszym sprzętem: chłodzenia wodne,
+              płyty główne Intel i AMD, zasilacze modularne, obudowy ATX. Każde stanowisko
+              testujemy przed wydaniem klientowi.
+            </p>
+            <Button to="/serwis" variant="outline" size="lg">
+              <Icon name="lucide:arrow-right" class="size-4" />
+              Zobacz usługi serwisowe
+            </Button>
+          </div>
         </div>
       </Container>
     </section>

@@ -59,6 +59,15 @@ export default defineNuxtConfig({
     format: ['webp', 'avif'],
   },
 
+  // Favicon
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+      ],
+    },
+  },
+
   // Site metadata for @nuxtjs/seo
   site: {
     url: 'https://neksus.pl',

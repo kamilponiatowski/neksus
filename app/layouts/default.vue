@@ -33,9 +33,14 @@ watch(() => route.path, () => {
         <nav class="flex items-center justify-between h-16">
 
           <!-- Logo -->
-          <NuxtLink to="/" class="flex items-center gap-2 font-bold text-xl tracking-tight text-ink">
-            <Icon name="lucide:monitor" class="size-6 text-brand" />
-            <span>{{ business.name }}</span>
+          <NuxtLink to="/" class="flex items-center" aria-label="Neksus — strona główna">
+            <img
+              src="/images/brands/logo-svg.svg"
+              alt="Neksus logo"
+              class="h-8 w-auto dark:invert"
+              width="133"
+              height="40"
+            />
           </NuxtLink>
 
           <!-- Desktop nav -->
