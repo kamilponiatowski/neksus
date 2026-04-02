@@ -94,7 +94,7 @@ const warrantyTerms = [
             >
               <div class="flex gap-4">
                 <div class="flex-shrink-0">
-                  <div class="flex items-center justify-center size-8 rounded-full bg-brand text-white font-bold text-sm">
+                  <div class="flex items-center justify-center size-8 rounded-full icon-glass font-bold text-sm">
                     {{ term.id }}
                   </div>
                 </div>

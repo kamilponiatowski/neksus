@@ -7,8 +7,13 @@ useSeoMeta({
 })
 
 const { data: porady } = await useAsyncData('porady', () =>
-  queryCollection('porady').order('date', 'DESC').all()
+  queryCollection('porady')
+    .select('path', 'title', 'description', 'image', 'tags', 'date')
+    .order('date', 'DESC')
+    .all()
 )
+console.log(porady)
+console.log('Porady loaded:', porady.value?.length || 0)
 </script>
 
 <template>
@@ -35,7 +40,7 @@ const { data: porady } = await useAsyncData('porady', () =>
     <!-- Articles List -->
     <section class="py-12">
       <Container>
-        <div v-if="porady && porady.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div v-if="porady && porady.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
           <Card
             v-for="porada in porady"
             :key="porada.path"
@@ -66,7 +71,7 @@ const { data: porady } = await useAsyncData('porady', () =>
                 </h2>
               </NuxtLink>
             </template>
-            <p class="text-sm text-ink-muted line-clamp-3">{{ porada.description }}</p>
+            <p class="text-sm text-ink-muted">{{ porada.description }}</p>
             <template #footer>
               <div class="flex items-center justify-between">
                 <span class="text-xs text-ink-muted">

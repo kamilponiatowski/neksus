@@ -5,13 +5,6 @@ const { data: porada } = await useAsyncData(`porada-${route.path}`, () =>
   queryCollection('porady').path(route.path).first()
 )
 
-if (!porada.value) {
-  throw createError({
-    statusCode: 404,
-    statusMessage: 'Nie znaleziono artykułu',
-  })
-}
-
 useSeoMeta({
   title: () => porada.value?.title ? `${porada.value.title} — Neksus` : 'Porady — Neksus',
   description: () => porada.value?.description || '',

@@ -1,13 +1,11 @@
 ---
 title: "Twój komputer nie wspiera Windows 11? Jak przygotować sprzęt na 2026 rok"
 description: "Zakończenie wsparcia Windows 10 to realny problem dla bezpieczeństwa. Sprawdź, czy Twój laptop poradzi sobie z wymaganiami AI i jak bezpiecznie zaktualizować system w Gdańsku."
-image: "/images/tech-inside-base.png"
+image: "/images/brak-wsparcia-win-11.png"
 author: "Neksus"
 date: "2026-03-20"
 tags: ["windows 11", "bezpieczeństwo", "serwis gdańsk", "ai pc"]
 ---
-
-# Twój komputer nie wspiera Windows 11? Jak przygotować sprzęt na 2026 rok
 
 Rok 2026 to czas wielkich zmian dla użytkowników komputerów. Po oficjalnym zakończeniu wsparcia dla systemu Windows 10 pod koniec 2025 roku, tysiące mieszkańców Gdańska stanęło przed dylematem: wymiana sprzętu czy ryzykowna praca na dziurawym systemie? Brak aktualizacji zabezpieczeń to zaproszenie dla wirusów i ataków typu phishing, które w naszym regionie są coraz częstsze.
 

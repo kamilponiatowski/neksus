@@ -142,7 +142,7 @@ const marqueeItems = [...trustBrands, ...trustBrands, ...trustBrands.slice(0,4)]
           <!-- Image -->
           <div class="relative h-64 md:h-auto md:min-h-[380px] overflow-hidden rounded-none">
             <NuxtImg
-              src="/images/hero/hero-luty-na-plycie.png"
+              src="/images/hero-luty-na-plycie.png"
               alt="Nowoczesny sprzęt komputerowy — płyta główna"
               class="w-full h-full object-cover"
               width="800"

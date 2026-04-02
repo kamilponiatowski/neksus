@@ -35,7 +35,7 @@ watch(() => route.path, () => {
           <!-- Logo -->
           <NuxtLink to="/" class="flex items-center" aria-label="Neksus — strona główna">
             <img
-              src="/images/brands/logo-svg.svg"
+              src="/images/logo-svg.svg"
               alt="Neksus logo"
               class="h-8 w-auto dark:invert"
               width="133"

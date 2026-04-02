@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Jak przyspieszyć stary wolny komputer — poradnik 2026"
 description: "Sprawdzone metody na przyspieszenie starego komputera. Wymiana dysku na SSD, dokładanie RAM, czyszczenie systemu. Poradnik serwisu Neksus z Gdańska."
 image: "/images/make-comp-fast.png"
@@ -6,8 +6,6 @@ author: "Neksus"
 date: "2026-03-15"
 tags: ["modernizacja", "ssd", "przyspieszenie", "poradnik"]
 ---
-
-# Jak przyspieszyć stary wolny komputer — poradnik 2026
 
 Twój komputer działa coraz wolniej? Uruchamianie systemu trwa wieczność, a programy otwierają się z opóźnieniem? To nie oznacza, że musisz kupować nowy sprzęt. W wielu przypadkach kilka prostych modernizacji może tchnąć nowe życie w starszy komputer.
 
