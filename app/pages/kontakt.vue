@@ -24,12 +24,6 @@ useSeoMeta({
               <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-ink" style="letter-spacing: -0.02em;">
                 Kontakt
               </h1>
-              <div class="mt-1">
-                <Badge :color="statusColor" size="sm" dot>
-                  <Icon :name="isOpen ? 'lucide:door-open' : 'lucide:door-closed'" class="size-3.5 mr-1" />
-                  {{ statusText }}
-                </Badge>
-              </div>
             </div>
           </div>
           <p class="text-lg text-ink-muted">
@@ -118,9 +112,15 @@ useSeoMeta({
             <!-- Opening Hours -->
             <Card>
               <template #header>
-                <div class="flex items-center gap-2">
-                  <Icon name="lucide:clock" class="size-5 text-brand" />
-                  <span class="font-semibold">Godziny otwarcia</span>
+                <div class="flex items-center justify-between gap-2">
+                  <div class="flex items-center gap-2">
+                    <Icon name="lucide:clock" class="size-5 text-brand" />
+                    <span class="font-semibold">Godziny otwarcia</span>
+                  </div>
+                  <Badge :color="statusColor" size="sm" dot>
+                    <Icon :name="isOpen ? 'lucide:door-open' : 'lucide:door-closed'" class="size-3.5 mr-1" />
+                    {{ statusText }}
+                  </Badge>
                 </div>
               </template>
               <div class="space-y-2">

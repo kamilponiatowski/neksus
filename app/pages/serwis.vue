@@ -100,6 +100,17 @@ const serviceDetails = [
       </Container>
     </section>
 
+    <!-- Note -->
+    <section class="py-8">
+      <Container>
+        <Alert color="info" title="Uwaga" description="Instalujemy oprogramowanie jedynie z nośników dostarczonych przez klienta.">
+          <template #icon>
+            <Icon name="lucide:info" class="size-5" />
+          </template>
+        </Alert>
+      </Container>
+    </section>
+
     <!-- Quick Services Grid -->
     <section class="py-12 bg-page-alt">
       <Container>
@@ -142,27 +153,18 @@ const serviceDetails = [
                 <Icon name="lucide:phone" class="size-4" />
                 Zadzwoń
               </a>
-              <NuxtLink
-                to="/kontakt"
+              <a
+                :href="business.social.googleMaps"
+                target="_blank"
+                rel="noopener noreferrer"
                 class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-white text-white hover:bg-white/10 font-semibold transition-all duration-300"
               >
                 <Icon name="lucide:map-pin" class="size-4" />
-                Przyjdź do nas
-              </NuxtLink>
+                Przyjedź do nas
+              </a>
             </div>
           </div>
         </div>
-      </Container>
-    </section>
-
-    <!-- Note -->
-    <section class="py-8">
-      <Container>
-        <Alert color="info" title="Uwaga" description="Instalujemy oprogramowanie jedynie z nośników dostarczonych przez klienta.">
-          <template #icon>
-            <Icon name="lucide:info" class="size-5" />
-          </template>
-        </Alert>
       </Container>
     </section>
   </div>

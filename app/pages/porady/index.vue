@@ -12,8 +12,6 @@ const { data: porady } = await useAsyncData('porady', () =>
     .order('date', 'DESC')
     .all()
 )
-console.log(porady)
-console.log('Porady loaded:', porady.value?.length || 0)
 </script>
 
 <template>
@@ -103,7 +101,6 @@ console.log('Porady loaded:', porady.value?.length || 0)
             Jeśli masz problem z komputerem, który wykracza poza nasze porady, skontaktuj się z nami.
           </p>
           <Button to="/kontakt" size="lg">
-            <Icon name="lucide:phone" class="size-5" />
             Skontaktuj się
           </Button>
         </div>

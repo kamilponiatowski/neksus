@@ -41,8 +41,6 @@ const trustBrands = [
   { name: 'Toshiba', color: '#CC0000' },
   { name: 'Samsung', color: '#1428A0' },
 ]
-// Duplicate for seamless marquee loop
-const marqueeItems = [...trustBrands, ...trustBrands, ...trustBrands.slice(0,4)]
 </script>
 
 <template>
@@ -95,12 +93,21 @@ const marqueeItems = [...trustBrands, ...trustBrands, ...trustBrands.slice(0,4)]
       <Container>
         <p class="text-center text-xs text-ink-muted uppercase tracking-widest mb-5 font-medium">Zaufane marki w naszej ofercie</p>
       </Container>
-      <div class="overflow-hidden">
-        <div class="trust-track flex items-center w-max">
+      <div class="overflow-hidden flex">
+        <div class="trust-track flex items-center shrink-0">
           <span
-            v-for="(brand, i) in marqueeItems"
+            v-for="(brand, i) in trustBrands"
             :key="i"
-            class="px-8 text-sm font-bold text-ink-muted tracking-widest cursor-default select-none transition-colors duration-300"
+            class="px-10 text-sm font-bold text-ink-muted tracking-widest cursor-default select-none transition-colors duration-300"
+            @mouseenter="($event.target as HTMLElement).style.color = brand.color"
+            @mouseleave="($event.target as HTMLElement).style.color = ''"
+          >{{ brand.name }}</span>
+        </div>
+        <div class="trust-track flex items-center shrink-0" aria-hidden="true">
+          <span
+            v-for="(brand, i) in trustBrands"
+            :key="i"
+            class="px-10 text-sm font-bold text-ink-muted tracking-widest cursor-default select-none transition-colors duration-300"
             @mouseenter="($event.target as HTMLElement).style.color = brand.color"
             @mouseleave="($event.target as HTMLElement).style.color = ''"
           >{{ brand.name }}</span>

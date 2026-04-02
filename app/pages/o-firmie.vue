@@ -100,9 +100,9 @@ useSeoMeta({
               <p class="text-sm">{{ business.legalName }}</p>
             </Card>
 
-            <Button to="/kontakt" block size="lg">
+            <Button :to="`tel:${business.contact.phone[0]?.replace(/\s/g, '') || ''}`" block size="lg">
               <Icon name="lucide:phone" class="size-5" />
-              Skontaktuj się
+              Zadzwoń do nas
             </Button>
           </div>
         </div>

@@ -140,9 +140,15 @@ const warrantyTerms = [
               </template>
               <p>{{ business.address.street }}</p>
               <p class="text-ink-muted">{{ business.address.postalCode }} {{ business.address.city }}</p>
-              <Button to="/kontakt" variant="link" class="mt-2">
+              <a
+                :href="business.social.googleMaps"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-2 inline-flex items-center gap-1.5 text-sm font-semibold text-brand hover:text-brand-hover transition-colors duration-300"
+              >
+                <Icon name="lucide:map" class="size-4" />
                 Zobacz na mapie
-              </Button>
+              </a>
             </Card>
           </div>
         </div>

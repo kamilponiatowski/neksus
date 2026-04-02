@@ -37,7 +37,14 @@ watch(() => route.path, () => {
             <img
               src="/images/logo-svg.svg"
               alt="Neksus logo"
-              class="h-8 w-auto dark:invert"
+              class="h-8 w-auto dark:hidden"
+              width="133"
+              height="40"
+            />
+            <img
+              src="/images/logo-svg-dark.svg"
+              alt="Neksus logo"
+              class="h-8 w-auto hidden dark:block"
               width="133"
               height="40"
             />

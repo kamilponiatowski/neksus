@@ -138,10 +138,13 @@ useSeoMeta({
             </Card>
           </div>
 
-          <Button to="/kontakt" class="mt-6">
+          <a
+            :href="`mailto:${business.contact.email}`"
+            class="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-brand text-white hover:bg-brand-hover font-semibold transition-all duration-300"
+          >
             <Icon name="lucide:mail" class="size-4" />
             Zapytaj o ofertę B2B
-          </Button>
+          </a>
         </div>
       </Container>
     </section>

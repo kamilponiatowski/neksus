@@ -113,16 +113,14 @@
   animation: pulse-brand 2.4s ease-in-out infinite;
 }
 
-/* Infinite trust-bar marquee */
+/* Infinite trust-bar marquee — two-sibling technique */
 @keyframes trust-scroll {
   0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  100% { transform: translateX(-100%); }
 }
 .trust-track {
-  animation: trust-scroll 30s linear infinite;
-}
-.trust-track:hover {
-  animation-play-state: paused;
+  animation: trust-scroll 28s linear infinite;
+  will-change: transform;
 }
 
 /* Glass icon button — rounded pill with subtle red glow */
