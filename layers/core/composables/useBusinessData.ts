@@ -30,7 +30,6 @@ export interface NeksusBusinessData {
   }
   hours: {
     regular: BusinessHours[]
-    summerNote: string
   }
   services: {
     id: string
@@ -70,14 +69,12 @@ export function useBusinessData(): NeksusBusinessData {
 
     hours: {
       regular: [
-        { day: 'Monday', open: '09:00', close: '17:00' },
-        { day: 'Tuesday', open: '09:00', close: '17:00' },
-        { day: 'Wednesday', open: '09:00', close: '17:00' },
-        { day: 'Thursday', open: '09:00', close: '17:00' },
-        { day: 'Friday', open: '09:00', close: '17:00' },
-        { day: 'Saturday', open: '10:00', close: '13:00', note: 'Closed June-August' },
+        { day: 'Monday', open: '09:00', close: '16:00' },
+        { day: 'Tuesday', open: '09:00', close: '16:00' },
+        { day: 'Wednesday', open: '09:00', close: '16:00' },
+        { day: 'Thursday', open: '09:00', close: '16:00' },
+        { day: 'Friday', open: '09:00', close: '16:00' },
       ],
-      summerNote: 'Od czerwca do sierpnia sklep jest nieczynny w soboty.',
     },
 
     services: [

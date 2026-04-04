@@ -126,24 +126,14 @@ useSeoMeta({
               <div class="space-y-2">
                 <div class="flex justify-between py-2 border-b border-card-border last:border-0">
                   <span class="text-ink">Poniedziałek - Piątek</span>
-                  <span class="font-medium text-ink">9:00 - 17:00</span>
+                  <span class="font-medium text-ink">9:00 - 16:00</span>
                 </div>
                 <div class="flex justify-between py-2 border-b border-card-border last:border-0">
-                  <span class="text-ink">Sobota</span>
-                  <span class="font-medium text-ink">10:00 - 13:00</span>
-                </div>
-                <div class="flex justify-between py-2 border-b border-card-border last:border-0">
-                  <span class="text-ink">Niedziela</span>
+                  <span class="text-ink">Sobota - Niedziela</span>
                   <span class="font-medium text-ink-muted">Nieczynne</span>
                 </div>
               </div>
-              <template #footer>
-                <Alert color="warning" :description="business.hours.summerNote">
-                  <template #icon>
-                    <Icon name="lucide:sun" class="size-5" />
-                  </template>
-                </Alert>
-              </template>
+
             </Card>
           </div>
         </div>

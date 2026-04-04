@@ -166,9 +166,8 @@ watch(() => route.path, () => {
               </a>
             </div>
             <div class="space-y-1 text-sm text-ink-muted">
-              <p>Pon–Pt: 9:00 – 17:00</p>
-              <p>Sob: 10:00 – 13:00</p>
-              <p class="text-xs italic mt-2">{{ business.hours.summerNote }}</p>
+              <p>Pon–Pt: 9:00 – 16:00</p>
+              <p>Sob–Nd: Nieczynne</p>
             </div>
           </div>
 

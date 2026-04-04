@@ -1,35 +1,37 @@
 ﻿/**
  * Computes whether the shop is currently open based on business hours.
- * Accounts for summer Saturday closures (June-August).
+ * Runs client-side only (onMounted) to avoid SSR time mismatch.
  */
 export function useOpenStatus() {
   const business = useBusinessData()
 
-  const isOpen = computed(() => {
+  // Default false — safe SSR fallback (shows "Zamknięte" before hydration)
+  const isOpen = ref(false)
+
+  function computeOpenStatus() {
     const now = new Date()
     const dayIndex = now.getDay()
     const currentHour = now.getHours()
     const currentMinute = now.getMinutes()
-    const currentMonth = now.getMonth() // 0-indexed
 
-    // Sunday = 0, closed
-    if (dayIndex === 0) return false
-
-    // Saturday = 6
-    if (dayIndex === 6) {
-      // June (5) to August (7) — closed on Saturdays
-      if (currentMonth >= 5 && currentMonth <= 7) return false
-
-      const saturdayHours = business.hours.regular.find(h => h.day === 'Saturday')
-      if (!saturdayHours) return false
-
-      return isWithinHours(currentHour, currentMinute, saturdayHours.open, saturdayHours.close)
+    // Sunday = 0 or Saturday = 6, closed
+    if (dayIndex === 0 || dayIndex === 6) {
+      isOpen.value = false
+      return
     }
 
     // Monday-Friday
     const weekdayHours = business.hours.regular[0]
-    if (!weekdayHours) return false
-    return isWithinHours(currentHour, currentMinute, weekdayHours.open, weekdayHours.close)
+    if (!weekdayHours) {
+      isOpen.value = false
+      return
+    }
+    isOpen.value = isWithinHours(currentHour, currentMinute, weekdayHours.open, weekdayHours.close)
+  }
+
+  // Only runs in browser — avoids SSR/SSG time mismatch
+  onMounted(() => {
+    computeOpenStatus()
   })
 
   const statusText = computed(() => (isOpen.value ? 'Otwarte' : 'Zamknięte'))
