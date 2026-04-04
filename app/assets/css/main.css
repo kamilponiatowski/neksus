@@ -15,13 +15,13 @@
   --neksus-card: #FFFFFF;
   --neksus-card-border: #E2E8F0;
   --neksus-nav-border: #E2E8F0;
-  --neksus-brand: #D32F2F;
-  --neksus-brand-hover: #C62828;
+  --neksus-brand: #C62828;
+  --neksus-brand-hover: #B71C1C;
   --neksus-brand-light: #EF5350;
   /* Explicit subtle tint — avoids Tailwind v4 opacity-modifier CSS-var chain issue */
   --neksus-brand-subtle: #FDEAEA;
   --neksus-text: #0F172A;
-  --neksus-text-muted: #64748B;
+  --neksus-text-muted: #475569;
 }
 
 .dark {
