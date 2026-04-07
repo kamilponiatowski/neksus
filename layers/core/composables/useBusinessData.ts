@@ -30,6 +30,7 @@ export interface NeksusBusinessData {
   }
   hours: {
     regular: BusinessHours[]
+    closed: string[]
   }
   services: {
     id: string
@@ -58,8 +59,8 @@ export function useBusinessData(): NeksusBusinessData {
     },
 
     geo: {
-      latitude: 54.3520,
-      longitude: 18.6466,
+      latitude: 54.345669115718685,
+      longitude: 18.649385240164257,
     },
 
     contact: {
@@ -75,6 +76,7 @@ export function useBusinessData(): NeksusBusinessData {
         { day: 'Thursday', open: '09:00', close: '16:00' },
         { day: 'Friday', open: '09:00', close: '16:00' },
       ],
+      closed: ['Sobota – Niedziela', 'Święta'],
     },
 
     services: [
@@ -117,7 +119,7 @@ export function useBusinessData(): NeksusBusinessData {
     ],
 
     social: {
-      googleMaps: 'https://maps.google.com/?q=Neksus+Gdańsk+Kocurki+3',
+      googleMaps: 'https://www.google.com/maps?q=54.345669115718685,18.649385240164257',
     },
   }
 }

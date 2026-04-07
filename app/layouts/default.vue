@@ -173,11 +173,18 @@ watch(() => route.path, () => {
 
         </div>
 
-        <div class="mt-8 pt-6 border-t border-nav-border text-center text-sm text-ink-muted">
+        <div class="mt-8 pt-6 border-t border-nav-border flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-ink-muted">
           <p>&copy; {{ currentYear }} {{ business.name }}. Wszelkie prawa zastrzeżone.</p>
+          <div class="flex items-center gap-4">
+            <NuxtLink to="/polityka-prywatnosci" class="hover:text-brand transition-colors">Polityka prywatności</NuxtLink>
+            <NuxtLink to="/polityka-cookies" class="hover:text-brand transition-colors">Polityka cookies</NuxtLink>
+          </div>
         </div>
       </Container>
     </footer>
 
+    <!-- Global overlays -->
+    <ContactPopup />
+    <CookiesBanner />
   </div>
 </template>
