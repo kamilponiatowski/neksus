@@ -34,6 +34,10 @@ export default defineNuxtConfig({
       routes: ['/'],
       crawlLinks: true,
     },
+    routeRules: {
+      '/**': { prerender: true },
+      '/kontakt/**': { prerender: false },
+    },
   },
 
   // CSS entry point
