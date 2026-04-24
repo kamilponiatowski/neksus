@@ -180,6 +180,31 @@ watch(() => route.path, () => {
             <NuxtLink to="/polityka-cookies" class="hover:text-brand transition-colors">Polityka cookies</NuxtLink>
           </div>
         </div>
+        <!-- Producktive Site Signature -->
+        <div class="pb-8 flex justify-center">
+          <a
+            href="https://producktive.pl"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-full border text-xs no-underline transition-all duration-300
+              border-black/10 bg-black/[0.03] text-[#555]
+              dark:border-white/10 dark:bg-white/[0.04] dark:text-[#8B8BA7]
+              hover:border-black/20 dark:hover:border-white/20"
+            style="font-family: 'Segoe UI', Arial, sans-serif;"
+          >
+            Stworzone z
+            <span style="color:#D4AF37;">🧡</span>
+            przez
+            <img
+              src="https://producktive.pl/logo.svg"
+              alt="Producktive"
+              width="16"
+              height="16"
+              class="inline-block align-middle rounded-[4px]"
+            />
+            <span class="font-semibold text-[#0a0e14] dark:text-[#00E5FF]">Producktive</span>
+          </a>
+        </div>
       </Container>
     </footer>
 
